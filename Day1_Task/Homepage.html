@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<head>
+    <title>E-COMMERCE WEBSITE</title>
+</head>
+<style>
+    #header {
+        background-color: cadetblue;
+        border: 1px solid cadetblue;
+        margin: -10px -10px -10px -10px;
+        position: sticky;
+        top: 0;
+
+    }
+
+    #design {
+        position: relative;
+        left: 450px;
+        bottom: 2px;
+
+    }
+
+    #search {
+        position: relative;
+        border: 2px solid black;
+        border-radius: 5px;
+        bottom: 50px;
+        margin-left: 500px;
+        height: 40px;
+        width: 300px;
+        font-size: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        position: relative;
+        left: 1100px;
+        bottom: 105px;
+
+    }
+
+    a:hover {
+        color: gold;
+
+
+    }
+
+    h3 {
+        position: relative;
+        background-color: lightsalmon;
+        border: 2px solid black;
+    }
+
+    a:hover {
+        color: red;
+        border: 2px solid black;
+        border-radius: 5px;
+
+        padding: 10px 10px 10px 10px;
+        background-color: pink;
+
+    }
+
+    a {
+        position: relative;
+        left: 50px;
+        top: 55px;
+        text-decoration: none;
+        color: darkorchid;
+    }
+
+    #sec1 {
+        border: 5px solid #000000;
+        position: relative;
+        top: 20px;
+        height: 200px;
+        width: 65%;
+    }
+
+    #sec2 {
+        border: 5px solid black;
+        position: relative;
+        position: relative;
+        top: 40px;
+        height: 200px;
+        width: 33%;
+        margin-left: 830px;
+        bottom: ;
+    }
+
+    .grid-container {
+        position: relative;
+        top: 30px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        background-color: #2196F3;
+        padding: 10px;
+
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #phone {
+        font-size: small;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .rate {
+        float: left;
+        height: 46px;
+        padding: 0 10px;
+    }
+
+    .rate:not(:checked)>input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate:not(:checked)>label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color
+        : #ccc;
+    }
+button
+{
+    border: 2px  black;
+    border-radius: 3px;
+    padding: 3px 3px 3px 3px;
+}
+    button:hover{
+        background-color: orange;
+        color: red;
+        
+
+    }
+    #but
+    {
+        border: 2px  black;
+        border-radius: 3px;
+        padding: 10px 10px 10px 10px;
+    }
+    #but:hover{
+        background-color: violet;
+        color: black;
+    }
+</style>
+
+<body>
+    <div id="header">
+        <nav>
+            <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">LOGIN</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">ABOUT</a>
+        </nav>
+        <img id="design" src="Blibli.jpg" width="350px" height="100px">
+        <input id="search" type="text" size=80 placeholder="Search Here..."></input>
+        <button style="position: relative;  bottom: 43px;left: 10px;" type="submit"><img src="search-icon.jpg"
+                width="30px" height="30px"></button>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" style="grid-row: 1/5">
+            <h4>Mobile Adding</h4><br>
+            <form>
+                <label>Name:</label>
+                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" type="text" placeholder="mobile name"></input>
+                <label>Model:</label>
+                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" type="text" placeholder="model"></input>
+                <label>Ram:</label>
+                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" type="number" placeholder="ram"></input>
+                <label>Memory:</label>
+                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" type="number" placeholder="memory"></input>
+                <label>Price:</label>
+                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" type="number" placeholder="price"></input>
+                <br><br><button id="but" type="submit">ADD MOBILE</button>
+            </form>
+        </div>
+        <div class="grid-item"><img src="p1.png" width="100px" height="200px">
+            <div id="phone">
+                Samsung M13 Series,128GB,8GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;30000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p2.jpg" width="100px" height="200px">
+            <div id="phone">
+                OPPO A5S Series,64GB,8GB
+                <br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;40000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p3.jpg" width="100px" height="200px">
+            <div id="phone">
+                REDMI NOTE5,128GB,4GBb
+                <br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;20000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p5.jpg" width="100px" height="200px">
+            <div id="phone">
+                MOTO G5,256GB,8GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;80000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p6.jpg" width="100px" height="200px">
+            <div id="phone">
+                IPHONE 13,128GB,8GB
+                <br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;70000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p7.jpg" width="100px" height="200px">
+            <div id="phone">
+                REDMI NOT 9 PRO,128GB,8GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;35000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p8.jpg" width="100px" height="200px">
+            <div id="phone">
+                REALME 9,256GB,8GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;55000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p9.jpg" width="100px" height="200px">
+            <div id="phone">
+                VIVO 11,128GB,8GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;85000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p1.png" width="100px" height="200px">
+            <div id="phone">
+                SAMSUNG A9,128GB,8GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;66000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p2.jpg" width="100px" height="200px">
+            <div id="phone">
+                REDMI NOTE 5,64GB,4GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;35000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p7.jpg" width="100px" height="200px">
+            <div id="phone">
+                OPPO A7S,64GB,4GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>&#8377;20000
+                <br><button type="submit">ADD TO CART</button>
+
+            </div>
+        </div>
+        <div class="grid-item"><img src="p3.jpg" width="100px" height="200px">
+            <div id="phone">
+                ONE PLUS 8,256GB,8GB<br>
+                <input type="radio" id="star5" name="rate" value="5" />
+
+                <input type="radio" id="star4" name="rate" value="4" />
+
+                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star1" name="rate" value="1" />
+                <br>
+                &#8377;88000
+                <br><button type="submit">ADD TO CART</button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
