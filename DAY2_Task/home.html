@@ -2,37 +2,8 @@
 
 <head>
     <title>E-COMMERCE WEBSITE</title>
-    <script>
-        function Validation(event) {
-            event.preventDefault();
-            var mobile = {};
-            var a = document.getElementById("name").value;
-            var b = document.getElementById("model").value;
-            var c = document.getElementById("ram").value;
-            var d = document.getElementById("memory").value;
-            var e = document.getElementById("price").value;
-
-            if (a === "" | b === "" | c === "" | d === "" | e === "") {
-                window.alert("This Field should Be Filled");
-            }
-
-            else {
-                window.alert("Successfully Mobile is Added");
-            }
-            console.log(a);
-            console.log(b);
-            console.log(c);
-            console.log(d);
-            console.log(e);
-            mobile.name = a;
-            mobile.model = b;
-            mobile.ram = c;
-            mobile.memory = d;
-            mobile.price = e;
-            console.log(mobile);
-
-
-        }
+    <script src="myscript.js"> 
+        
     </script>
 </head>
 <style>
@@ -51,7 +22,7 @@
         bottom: 2px;
 
     }
-
+s
     #search {
         position: relative;
         border: 2px solid black;
@@ -127,7 +98,7 @@
         grid-template-columns: 16% 16% 16% 16% 16% ;
         background-color: white;
         padding: 10px;
-        
+        z-index:-2;
 
     }
 
