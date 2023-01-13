@@ -2,11 +2,11 @@
 
 <head>
     <title>E-COMMERCE WEBSITE</title>
-    <script src="myscript.js"> 
-        
+    <script src="myscript.js">
+
     </script>
 </head>
-<style>
+<style type="text/css">
     #header {
         background-color: cadetblue;
         border: 1px solid cadetblue;
@@ -22,7 +22,7 @@
         bottom: 2px;
 
     }
-s
+
     #search {
         position: relative;
         border: 2px solid black;
@@ -95,10 +95,10 @@ s
         position: relative;
         top: 30px;
         display: grid;
-        grid-template-columns: 16% 16% 16% 16% 16% ;
+        grid-template-columns: 16% 16% 16% 16% 16%;
         background-color: white;
         padding: 10px;
-        z-index:-2;
+        /*z-index: -2;*/
 
     }
 
@@ -142,22 +142,22 @@ s
         background-color: violet;
         color: black;
     }
-    #table
-    {
-        position:absolute;
-        border: 2px solid black;   
+
+    #table {
+        position: absolute;
+        border: 2px solid black;
         /* margin-left: 1150px; */
         right: 3px;
         height: 1606px;
-        width:20%;
+        width: 20%;
         top: 10px;
-        
+
     }
-    #foot
-    {
+
+    #foot {
         border: 2px solid black;
         background-color: brown;
-        padding: 20px 20px 20px 20px ;
+        padding: 20px 20px 20px 20px;
     }
 </style>
 
@@ -168,7 +168,7 @@ s
             <a href="#">LOGIN</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="#">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="#">ABOUT</a>
-            <a style="left: 960px; "href="#">CHECKOUT</a>
+            <a style="left: 960px; " href="#">CHECKOUT</a>
         </nav>
         <img id="design" src="Blibli.jpg" width="350px" height="100px">
         <input id="search" type="text" size=80 placeholder="Search Here..."></input>
@@ -178,44 +178,59 @@ s
     <div class="grid-container">
         <div class="grid-item" style="grid-row: 1/7">
             <h4>Mobile Adding</h4><br>
-            <div><form onsubmit=" return Validation(event)">
-                <label>Name:</label><br>
-                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="name" type="text"
-                    placeholder="mobile name"></input><br>
-                <label>Model:</label><br>
-                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="model" type="text"
-                    placeholder="model"></input><br>
-                <label>Ram:</label><br>
-                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="ram" type="number"
-                    placeholder="ram"></input><br>
-                <label>Memory:</label><br>
-                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="memory" type="number"
-                    placeholder="memory"></input><br>
-                <label>Price:</label><br>
-                <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="price" type="number"
-                    placeholder="price"></input><br>
-                <br><br><button id="but" type="submit">ADD MOBILE</button>
-            </form><BR></div>
+            <div>
+                <form onsubmit=" return Validation(event)">
+                    <label>Name:</label><br>
+                    <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="name" type="text"
+                        placeholder="mobile name"></input><br>
+                    <label>Model:</label><br>
+                    <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="model" type="text"
+                        placeholder="model"></input><br>
+                    <label>Ram:</label><br>
+                    <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="ram" type="number"
+                        placeholder="ram"></input><br>
+                    <label>Memory:</label><br>
+                    <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="memory" type="number"
+                        placeholder="memory"></input><br>
+                    <label>Price:</label><br>
+                    <input style="border: 2px solid black;height: 40px;border-radius: 5px;" id="price" type="number"
+                        placeholder="price"></input><br>
+                    <br><br><button id="but" type="submit">ADD MOBILE</button>
+                </form><BR>
+            </div>
             <h4>FILTER</h4>
             <h5 style="border: 2px solid black ">MODEL</h5>
-            <input type="checkbox"><h6>OPPO</h6></input>
-            <input type="checkbox"><h6>REDMI</h6></input>
-            <input type="checkbox"><h6>ONEPLUS</h6></input>
-            <input type="checkbox"><h6>REALME</h6></input>
+            <input type="checkbox">
+            <h6>OPPO</h6></input>
+            <input type="checkbox">
+            <h6>REDMI</h6></input>
+            <input type="checkbox">
+            <h6>ONEPLUS</h6></input>
+            <input type="checkbox">
+            <h6>REALME</h6></input>
             <h5 style="border: 2px solid black ">RAM</h5>
-            <input type="checkbox"><h6>4GB</h6></input>
-            <input type="checkbox"><h6>8GB</h6></input>
-            <input type="checkbox"><h6>16GB</h6></input>
-            <input type="checkbox"><h6>64GB</h6></input>
+            <input type="checkbox">
+            <h6>4GB</h6></input>
+            <input type="checkbox">
+            <h6>8GB</h6></input>
+            <input type="checkbox">
+            <h6>16GB</h6></input>
+            <input type="checkbox">
+            <h6>64GB</h6></input>
             <h5 style="border: 2px solid black ">MEMORY</h5>
-            <input type="checkbox"><h6>64GB</h6></input>
-            <input type="checkbox"><h6>128GB</h6></input>
-            <input type="checkbox"><h6>256GB</h6></input>
-            
+            <input type="checkbox">
+            <h6>64GB</h6></input>
+            <input type="checkbox">
+            <h6>128GB</h6></input>
+            <input type="checkbox">
+            <h6>256GB</h6></input>
+
             <h5 style="border: 2px solid black ">PRICE</h5>
-            <input type="checkbox"><h6>above 20000</h6></input>
-            <input type="checkbox"><h6>below 20000</h6></input>
-            
+            <input type="checkbox">
+            <h6>above 20000</h6></input>
+            <input type="checkbox">
+            <h6>below 20000</h6></input>
+
         </div>
         <div class="grid-item"><img src="p1.png" width="100px" height="200px">
             <div id="phone">
@@ -540,21 +555,21 @@ s
             </div>
         </div>
 
-        
 
-        <div id="table" >
+
+        <div id="table">
             <div style="margin-left: 10px; color: Blue;"><br>
-            <h2 style=" text-align:center;"> SHOPPING CART</h2>
+                <h2 style=" text-align:center;"> SHOPPING CART</h2>
             </div>
         </div>
 
-          
+
     </div>
-</div><br><br>
-<div id="foot">
-    <h1 style="text-align: center;">terms and policy</h1>
-</div>
+    <div id="foot">
+        <h1 style="text-align: center;">terms and policy</h1>
+    </div>
 
 
-    
+
 </body>
+</html>
